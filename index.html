@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<!-- Review copy: production analytics omitted. -->
+    <meta charset="UTF-8">
+    <meta name="robots" content="noindex, nofollow, noarchive">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>サバトラ商會 | SABATORA SHOKAI（確認用）</title>
+    <meta name="description" content="サバトラ商會は、アート、コンテンツ、イベント、文学と音楽をめぐる企画など、日常の中で少しだけ楽しくて幸せなものを届ける小さな機関です。">
+    <!-- OGP -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="サバトラ商會 | SABATORA SHOKAI">
+    <meta property="og:description" content="サバトラ商會は、アート、コンテンツ、イベント、文学と音楽をめぐる企画など、日常の中で少しだけ楽しくて幸せなものを届ける小さな機関です。">
+    <meta property="og:url" content="https://syo-dev-00.github.io/sabatora-review/">
+    <meta property="og:image" content="https://syo-dev-00.github.io/sabatora-review/assets/img/ogp.jpg">
+    <meta property="og:site_name" content="サバトラ商會">
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="サバトラ商會 | SABATORA SHOKAI">
+    <meta name="twitter:description" content="サバトラ商會は、アート、コンテンツ、イベント、文学と音楽をめぐる企画など、日常の中で少しだけ楽しくて幸せなものを届ける小さな機関です。">
+    <meta name="twitter:image" content="https://syo-dev-00.github.io/sabatora-review/assets/img/ogp.jpg">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Noto+Sans+JP:wght@400;500;700;900&display=swap" rel="stylesheet">
+    <!-- CSS -->
+    <link rel="stylesheet" href="assets/css/style.css">
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="assets/icons/favicon-96x96.png" sizes="96x96">
+    <link rel="icon" type="image/svg+xml" href="assets/icons/favicon.svg">
+    <link rel="shortcut icon" href="assets/icons/favicon.ico">
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/icons/apple-touch-icon.png">
+    <link rel="manifest" href="assets/icons/site.webmanifest">
+</head>
+<body>
+    <!-- ヘッダー (PPTXレイアウト準拠) -->
+    <header class="header">
+        <div class="header-inner">
+            <!-- 左上ロゴ -->
+            <div class="header-logo-container">
+                <a href="index.html">
+                    <img src="assets/img/common/logo_touka_01.png" alt="サバトラ商會 ロゴ" class="header-logo">
+                </a>
+            </div>
+            
+            <!-- 右上アイコンエリア（現在は非表示） -->
+            <div class="header-icons-container">
+                <!-- TODO: 将来的にコンテンツ量が増えた段階で検索機能の実装を検討
+                <a href="#" class="icon-link search-icon disabled" onclick="return false;" aria-label="検索">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>
+                </a>
+                -->
+            </div>
+
+            <!-- スマホ用ハンバーガーメニュー -->
+            <button class="hamburger" type="button" aria-label="メニューを開く" aria-expanded="false" aria-controls="global-nav">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+
+            <!-- 中央タイトル（サイト名のみ） -->
+            <div class="header-center">
+                <div class="site-title">
+                    <span class="ja">サバトラ商會</span>
+                    <span class="en">SABATORA SHOKAI</span>
+                </div>
+            </div>
+
+            <!-- ナビゲーション -->
+            <nav class="header-nav" id="global-nav">
+                <ul class="nav-list">
+                    <li><a href="#content" class="nav-link">CONTENT</a></li>
+                    <li><a href="#works" class="nav-link">WORKS</a></li>
+                    <li><a href="#social" class="nav-link">SOCIAL</a></li>
+                    <li><a href="#contact" class="nav-link">CONTACT</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <!-- ファーストビュー (Hero) 無音ループ動画 -->
+        <section class="hero" id="top">
+            <h1 class="visually-hidden">サバトラ商會 | SABATORA SHOKAI</h1>
+            <div class="hero-banner hero-banner--logo">
+                <!--
+                    【更新箇所：トップ動画】
+                    assets/img/common/index_top_sabatora.mp4 を差し替えます。
+                    ファイル名を変える場合は、下のvideoのsrcを変更してください。
+                    通常は無音ループ。ボタンで先頭から音付きで1回再生し、無音ループへ戻ります。
+                -->
+                <video id="hero-video" src="assets/img/common/index_top_sabatora.mp4"
+                    autoplay muted loop playsinline width="800" height="800"
+                    poster="assets/img/common/logo_touka_00.png" aria-label="動くサバトラ商會の猫">
+                    お使いのブラウザーでは動画を再生できません。
+                </video>
+            </div>
+            <div class="hero-media-controls">
+                <button id="hero-video-play" class="hero-media-button" type="button" hidden>動画を再生</button>
+                <button id="hero-sound-play" class="hero-media-button" type="button"
+                    aria-controls="hero-video" hidden>鳴き声を聞く</button>
+                <p id="hero-sound-status" class="hero-media-status visually-hidden" role="status"></p>
+                <noscript><p>鳴き声の再生にはJavaScriptを有効にしてください。</p></noscript>
+            </div>
+        </section>
+
+        <!-- NEWS / TOPICS -->
+        <section class="news-section" id="news">
+            <div class="container">
+                <div class="news-box">
+                    <div class="news-header">
+                        <h2 class="news-title">NEWS / TOPICS</h2>
+                    </div>
+                    <ul class="news-list">
+                        <!--
+                            【更新箇所：NEWS / TOPICS】
+                            新規追加はli class="news-item"から/liまで一式を複製し、このコメントの下へ。
+                            日付が新しい順に上から並べます（自動並べ替えはありません）。
+                            日付と本文を書き換え、class名やタグは維持してください。
+                            詳しくは「サイト更新手順.md」のNEWS / TOPICSを参照してください。
+                        -->
+                        <li class="news-item">
+                            <span class="news-date">2026.10.20</span>
+                            <span class="news-text">忘却事象博覧会が更新されました！次回公演は12.20(SUN) 詳細は忘却事象博覧会ページにて！</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- CONTENT -->
+        <section class="content-section section-pad" id="content">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">CONTENT</h2>
+                </div>
+                <div class="content-grid">
+                    <!-- サバトラ商會とは -->
+                    <a href="about.html" class="content-item">
+                        <div class="content-icon icon-sabatora"><img src="assets/img/common/logo_touka_03.png" alt="サバトラ商會とは"></div>
+                        <h3 class="content-title">サバトラ商會とは</h3>
+                        <p class="content-desc">成り立ち・活動について</p>
+                    </a>
+
+                    <!-- サバトラなものたち -->
+                    <a href="people.html" class="content-item">
+                        <div class="content-icon icon-people">
+                            <img src="assets/img/people/people_sabatotora.png" alt="サバトラなものたち">
+                        </div>
+                        <h3 class="content-title">サバトラなものたち</h3>
+                        <p class="content-desc">運営チーム紹介</p>
+                    </a>
+                    
+                    <!-- 忘却事象博覧会 -->
+                    <a href="boukyaku.html" class="content-item">
+                        <div class="content-icon icon-bungou"><img src="assets/img/boukyaku/bungou_touka_01.png" alt="忘却事象博覧会"></div>
+                        <h3 class="content-title">忘却事象博覧会</h3>
+                        <p class="content-desc">文学と音楽をめぐる公演企画</p>
+                    </a>
+
+                    <!-- おわん -->
+                    <a href="https://owan.sabatora-shokai.com/" class="content-item" target="_blank" rel="noopener noreferrer">
+                        <div class="content-icon icon-owan"><img src="assets/img/owan/owan_touka.png" alt="おわん"></div>
+                        <h3 class="content-title">おわん</h3>
+                        <div class="content-subtitle">OWAN</div>
+                        <p class="content-desc">日本の魅力を、世界へつなぐ</p>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- WORKS -->
+        <section class="works-section section-pad" id="works">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">WORKS</h2>
+                </div>
+                <div class="works-body">
+                    <div class="works-grid">
+                        <!-- 猫代お賽銭友の会 -->
+                        <a href="works-neko-osaisen.html" class="works-card">
+                            <div class="works-card-img">
+                                <img src="assets/img/works/neko-osaisen/works_logo.png" alt="猫代お賽銭友の会">
+                            </div>
+                            <div class="works-card-body">
+                                <h3 class="works-card-title">猫代お賽銭友の会</h3>
+                                <p class="works-card-desc">保護猫シェルター支援活動</p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- リンク (SOCIAL) 本文セクションとして配置 -->
+        <section class="links section-pad" id="social">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">SOCIAL</h2>
+                </div>
+                <div class="links-grid">
+                    <!-- SHOP -->
+                    <a href="https://sabatora.shopselect.net" class="link-item" target="_blank" rel="noopener noreferrer">
+                        <div class="link-icon" style="height:52px;"><img src="assets/img/social/syouten.png" alt="SHOP" width="60" style="height:auto;"></div>
+                        <h3 class="link-name">SHOP</h3>
+                        <p class="link-desc">オリジナルグッズ・関連商品</p>
+                    </a>
+                    <!-- note -->
+                    <a href="https://note.com/mao_takeuchi" class="link-item" target="_blank" rel="noopener noreferrer">
+                        <div class="link-icon"><img src="assets/img/social/icon.svg" alt="note" width="40" height="40"></div>
+                        <h3 class="link-name">note</h3>
+                        <p class="link-desc">作者のブログ・活動報告</p>
+                    </a>
+                    <!-- 作者 Instagram -->
+                    <a href="https://www.instagram.com/mao_takeuchi/" class="link-item" target="_blank" rel="noopener noreferrer">
+                        <div class="link-icon"><img src="assets/img/social/Instagram_Glyph_Gradient.png" alt="Instagram" width="30" height="30"></div>
+                        <h3 class="link-name">Instagram / 作者</h3>
+                        <p class="link-desc">作者のInstagram</p>
+                    </a>
+                    <!-- おわん Instagram -->
+                    <a href="https://www.instagram.com/owanthecat/" class="link-item" target="_blank" rel="noopener noreferrer">
+                        <div class="link-icon"><img src="assets/img/social/Instagram_Glyph_Gradient.png" alt="Instagram" width="30" height="30"></div>
+                        <h3 class="link-name">Instagram / おわん</h3>
+                        <p class="link-desc">おわんのInstagram</p>
+                    </a>
+                    <!-- Twitch -->
+                    <a href="https://www.twitch.tv/owanthecat" class="link-item" target="_blank" rel="noopener noreferrer">
+                        <div class="link-icon"><img src="assets/img/social/glitch_flat_purple.svg" alt="Twitch" width="30" height="30"></div>
+                        <h3 class="link-name">Twitch</h3>
+                        <p class="link-desc">おわんのTwitch</p>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- コンタクト (Contact) メール導線 -->
+        <section class="contact section-pad" id="contact">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">CONTACT</h2>
+                </div>
+                <div class="contact-inner">
+                    <p class="contact-desc">
+                        お問い合わせは以下のフォームよりお願いいたします。
+                    </p>
+                    <a href="https://forms.gle/N3kHqeqKoKmUGtqM6" target="_blank" rel="noopener noreferrer" class="btn btn-primary">お問い合わせフォームへ</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- 最小限のフッター -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-inner">
+                <!-- 左側：ポリシー等 -->
+                <div class="footer-left">
+                    <div class="footer-policy">
+                        <div class="policy-links">
+                            <a href="sitepolicy.html" class="privacy-link">Site Policy</a>
+                            <span class="policy-separator">/</span>
+                            <a href="privacy.html" class="privacy-link">Privacy Policy</a>
+                        </div>
+                        <p class="copyright">&copy; SABATORA SHOKAI All rights reserved.</p>
+                    </div>
+                </div>
+                <!-- 右側：ロゴ -->
+                <div class="footer-right">
+                    <img src="assets/img/common/logo_touka_02.png" alt="サバトラ商會 ロゴ" class="footer-logo">
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="assets/js/main.js"></script>
+</body>
+</html>

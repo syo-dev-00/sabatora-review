@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+<!-- Review copy: production analytics omitted. -->
+    <meta charset="UTF-8">
+    <meta name="robots" content="noindex, nofollow, noarchive">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>忘却事象博覧会 - サバトラ商會 | SABATORA SHOKAI（確認用）</title>
+    <meta name="description" content="文学と音楽をめぐる公演企画「忘却事象博覧会」の詳細ページです。">
+    <!-- OGP -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="忘却事象博覧会 - サバトラ商會 | SABATORA SHOKAI">
+    <meta property="og:description" content="文学と音楽をめぐる公演企画「忘却事象博覧会」の詳細ページです。">
+    <meta property="og:url" content="https://syo-dev-00.github.io/sabatora-review/boukyaku.html">
+    <meta property="og:image" content="https://syo-dev-00.github.io/sabatora-review/assets/img/ogp.jpg">
+    <meta property="og:site_name" content="サバトラ商會">
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="忘却事象博覧会 - サバトラ商會 | SABATORA SHOKAI">
+    <meta name="twitter:description" content="文学と音楽をめぐる公演企画「忘却事象博覧会」の詳細ページです。">
+    <meta name="twitter:image" content="https://syo-dev-00.github.io/sabatora-review/assets/img/ogp.jpg">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Noto+Sans+JP:wght@400;500;700;900&display=swap"
+        rel="stylesheet">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="assets/css/style.css">
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="assets/icons/favicon-96x96.png" sizes="96x96">
+    <link rel="icon" type="image/svg+xml" href="assets/icons/favicon.svg">
+    <link rel="shortcut icon" href="assets/icons/favicon.ico">
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/icons/apple-touch-icon.png">
+    <link rel="manifest" href="assets/icons/site.webmanifest">
+</head>
+
+<body>
+    <!-- ヘッダー (PPTXレイアウト準拠) -->
+    <header class="header">
+        <div class="header-inner">
+            <!-- 左上ロゴ -->
+            <div class="header-logo-container">
+                <a href="index.html">
+                    <img src="assets/img/common/logo_touka_01.png" alt="サバトラ商會 ロゴ" class="header-logo">
+                </a>
+            </div>
+
+            <!-- 右上アイコンエリア（現在は非表示） -->
+            <div class="header-icons-container">
+                <!-- TODO: 将来的にコンテンツ量が増えた段階で検索機能の実装を検討
+                <a href="#" class="icon-link search-icon disabled" onclick="return false;" aria-label="検索">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>
+                </a>
+                -->
+            </div>
+
+            <!-- スマホ用ハンバーガーメニュー -->
+            <button class="hamburger" type="button" aria-label="メニューを開く" aria-expanded="false" aria-controls="global-nav">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+
+            <!-- 中央タイトル（サイト名のみ） -->
+            <div class="header-center">
+                <div class="site-title">
+                    <span class="ja">サバトラ商會</span>
+                    <span class="en">SABATORA SHOKAI</span>
+                </div>
+            </div>
+
+            <!-- ナビゲーション -->
+            <nav class="header-nav" id="global-nav">
+                <ul class="nav-list">
+                    <li><a href="index.html#content" class="nav-link">CONTENT</a></li>
+                    <li><a href="index.html#works" class="nav-link">WORKS</a></li>
+                    <li><a href="index.html#social" class="nav-link">SOCIAL</a></li>
+                    <li><a href="index.html#contact" class="nav-link">CONTACT</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main id="top">
+        <section class="boukyaku-page-wrapper">
+            <!-- パンくずリスト -->
+            <div class="breadcrumb">
+                <div class="container">
+                    <a href="index.html">サバトラ商會</a> &gt; <span>忘却事象博覧会</span>
+                </div>
+            </div>
+
+            <div class="boukyaku-main-container">
+                <!-- 導入エリア -->
+                <div class="boukyaku-hero">
+                    <div class="boukyaku-hero-inner">
+                        <!--
+                            【更新箇所：トップの次回公演表示】
+                            ポスター変更時は、下のaのhrefとimgのsrcを同じ画像パスへ更新します。
+                            altも新しい公演に合わせます。スマホでは高さを抑えて全体を表示し、
+                            ポスターを押すと別タブで原寸画像を開きます。
+                        -->
+                        <div class="boukyaku-hero-img">
+                            <a class="boukyaku-poster-link" href="assets/img/boukyaku/hakurankai_top_03.png" target="_blank" rel="noopener noreferrer">
+                                <img src="assets/img/boukyaku/hakurankai_top_03.png" alt="忘却事象博覧会 series3 Nankichi Niimi 公演ポスター">
+                                <span class="boukyaku-poster-caption">ポスターを拡大（別タブ）</span>
+                            </a>
+                        </div>
+                        <div class="boukyaku-hero-text">
+                            <h1 class="boukyaku-title">忘却事象博覧会(Mini)</h1>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- サブナビゲーション -->
+                <nav class="boukyaku-subnav">
+                    <ul class="subnav-list">
+                        <li><a href="#schedule">スケジュール</a></li>
+                        <li><a href="#past">過去の公演</a></li>
+                        <li><a href="#writers"><span class="pc-only">取り扱い</span>文豪リスト</a></li>
+                        <li><a href="#goods">グッズ</a></li>
+                        <li><a href="#gallery">ギャラリー</a></li>
+                    </ul>
+                </nav>
+
+                <div class="boukyaku-content-area">
+                    <!-- スケジュール -->
+                    <section id="schedule" class="boukyaku-section">
+                        <h3 class="boukyaku-section-title">スケジュール</h3>
+                        <!--
+                            【更新箇所：次回公演】
+                            下の「次回公演」の枠内にある公演名・開催時期・案内文を書き換えてください。
+                            <p class="..."> と </p> の間の文章だけを変更してください。
+                        -->
+                        <div class="schedule-box schedule-box--coming-soon">
+                            <h4 class="schedule-date">2026.12.20(SUN) 新栄sunset BLUE</h4>
+                            <p class="schedule-coming-soon">忘却事象博覧会 series3 は、名古屋出張編です。今年の総集も兼ねた公演となります。</p>
+                            <p class="schedule-address">10/20 <a class="schedule-ticket-link" href="http://sunset-blue.net/ticket/">sunset-blue.net</a>よりチケット予約受付開始。皆様のご来場をお待ちしております。</p>
+                            <p class="schedule-address">460-0005 Aichi nagoya nakaku higashisakura 2-18-24 B1</p>
+                            <div class="schedule-time-box">
+                                <p class="schedule-time">開館時間=18:30　開演時間=19:00</p>
+                            </div>
+                            <div class="schedule-ticket">
+                                <p class="schedule-ticket">チケット=前売3,500円/当日4,500円（+1drink 600円）</p>
+                                <p>※中学生以下無料（別途1drink 600円のみ要）</p>
+                                <p class="schedule-ticket">　　配信=1,500円</p>
+                                </div>
+                                <p class="schedule-cast">出演：Mao Takeuchi (NOVELS) and SpecialGuests</p>
+                            </div>
+                    </section>
+
+                    <!-- 過去の公演 -->
+                    <section id="past" class="boukyaku-section">
+                        <h3 class="boukyaku-section-title">過去の公演</h3>
+                        <!--
+                            【更新箇所：過去の公演】
+                            新しい公演を追加するときは、直下にある
+                            「過去の公演 ここから」から「過去の公演 ここまで」までを複製し、
+                            複製した一式を古い公演より上に置いてください。
+                            画像のファイル名、alt、日付・会場、住所、時間、料金、出演者などを
+                            新しい公演内容に書き換えてください。class名は変更しないでください。
+                        -->
+                        <!-- 過去の公演 ここから -->
+                        <div class="past-event-box">
+                            <div class="past-event-img">
+                                <img src="assets/img/boukyaku/hakurankai_02.png" alt="忘却事象博覧会 series2 Sakutaro Hagiwara 公演ポスター">
+                            </div>
+                            <div class="past-event-info">
+                                <h4 class="schedule-date">2026/5/24(SUN) 下北沢BAR?CCO</h4>
+                                <p class="schedule-address">155-0032 Tokyo setagaya daizawa 5-32-10 B1</p>
+                                <div class="schedule-time-box">
+                                    <p class="schedule-time">開館時間=18:30　開演時間=19:00</p>
+                                </div>
+                                <div class="schedule-ticket">
+                                    <p><del>チケット=前売3,000円/当日3,500円（+2drink1,200円）</del></p>
+                                    <p><del>※中学生以下無料（別途2drink1,200円のみ要）</del></p>
+                                    <p class="sold-out">※Thank You! Sold Out!</p>
+                                </div>
+                                <p class="schedule-cast">出演：Mao Takeuchi (NOVELS) and SpecialGuests</p>
+                            </div>
+                        </div>
+                        <!-- 過去の公演 ここまで -->
+                        <div class="past-event-box">
+                            <div class="past-event-img">
+                                <img src="assets/img/boukyaku/hakurankai_01.png" alt="忘却事象博覧会 series1 Kenji Miyazawa 公演ポスター">
+                            </div>
+                            <div class="past-event-info">
+                                <h4 class="schedule-date">2026/2/22(SUN) 下北沢BAR?CCO</h4>
+                                <p class="schedule-address">155-0032 Tokyo setagaya daizawa 5-32-10 B1</p>
+                                <div class="schedule-time-box">
+                                    <p class="schedule-time">開館時間=18:30　開演時間=19:00</p>
+                                </div>
+                                <div class="schedule-ticket">
+                                    <p><del>チケット=前売3,000円/当日3,500円（+2drink1,200円）</del></p>
+                                    <p><del>※中学生以下無料（別途2drink1,200円のみ要）</del></p>
+                                    <p class="sold-out">※Thank You! Sold Out!</p>
+                                </div>
+                                <p class="schedule-cast">出演：Mao Takeuchi (NOVELS) and SpecialGuests</p>
+                                <p class="schedule-coop">協力：SABATORASHOKAI/Bar Bachibouzouk</p>
+                            </div>
+                        </div>
+                    </section>
+
+                    <!-- 取り扱い文豪リスト -->
+                    <section id="writers" class="boukyaku-section">
+                        <h3 class="boukyaku-section-title">取り扱い文豪リスト</h3>
+                        <div class="writers-grid">
+                            <!--
+                                【更新箇所：取り扱い文豪リスト】
+                                文豪を追加するときは、下の「文豪カード ここから」から
+                                「文豪カード ここまで」までを複製し、writers-grid 内に貼り付けてください。
+                                画像のファイル名、alt、紹介文、取り扱い作品名を書き換えてください。
+                                class名と details / summary などのタグは変更しないでください。
+                            -->
+                            <!-- 萩原朔太郎 -->
+                            <!-- 文豪カード ここから -->
+                            <div class="writer-card">
+                                <details class="writer-details">
+                                    <summary class="writer-summary">
+                                        <div class="writer-img-wrapper">
+                                            <img src="assets/img/boukyaku/bungou_hagiwara.png" alt="萩原朔太郎" class="writer-img">
+                                        </div>
+                                        <span class="details-icon">詳細を見る</span>
+                                    </summary>
+                                    <div class="writer-info-content">
+                                        <span class="close-overlay-top">×</span>
+                                        <p>1886年（明治19年）11月1日 群馬県前橋市生まれ。<br>
+                                            近代詩の父と称される日本を代表する詩人。<br>
+                                            『月に吠える』などで口語自由詩の新たな地平を切り拓いた。</p>
+
+                                        <div class="writer-works">
+                                            <p class="works-title">-忘却事象博覧会取り扱い作品-</p>
+                                            <ul class="works-list">
+                                                <li>はつはる</li>
+                                                <li>猫町（朗読）</li>
+                                                <li>海鳥</li>
+                                                <li>まどろすの歌</li>
+                                                <li>蟻地獄</li>
+                                                <li>黒い蝙蝠</li>
+                                                <li>青猫</li>
+                                                <li>蝶を夢む</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </details>
+                            </div>
+                            <!-- 文豪カード ここまで -->
+
+                            <!-- 宮沢賢治 -->
+                            <div class="writer-card">
+                                <details class="writer-details">
+                                    <summary class="writer-summary">
+                                        <div class="writer-img-wrapper">
+                                            <img src="assets/img/boukyaku/bungou_miyazawa.png" alt="宮沢賢治" class="writer-img">
+                                        </div>
+                                        <span class="details-icon">詳細を見る</span>
+                                    </summary>
+                                    <div class="writer-info-content">
+                                        <span class="close-overlay-top">×</span>
+                                        <p>1896年（明治29年）8月27日 岩手県花巻市生まれ。<br>
+                                            詩人、童話作家、教師、科学者、宗教家など多彩な顔を持つ一方、農民の生活向上を目指して羅須地人協会を設立。<br>
+                                            37歳で永眠。<br>
+                                            生前は、詩集『春と修羅』、童話集『注文の多い料理店』（1924）を残す。</p>
+
+                                        <div class="writer-works">
+                                            <p class="works-title">-忘却事象博覧会取り扱い作品-</p>
+                                            <ul class="works-list">
+                                                <li>心象スケッチ（朗読）</li>
+                                                <li>林と思想</li>
+                                                <li>遠く琥珀のいろなして</li>
+                                                <li>銀河鉄道の夜（Talk to the wall)</li>
+                                                <li>敗れし少年のうたへる</li>
+                                                <li>ぬすびと</li>
+                                                <li>永訣の朝（抄）</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </details>
+                            </div>
+                        </div>
+                    </section>
+
+                    <!-- グッズ -->
+                    <section id="goods" class="boukyaku-section text-center">
+                        <h3 class="boukyaku-section-title">グッズ</h3>
+                        <p class="goods-desc">忘却事象博覧会のオリジナルグッズや文豪関連商品は サバトラ商店にてお取り扱いしております。</p>
+                        <a href="https://sabatora.shopselect.net" target="_blank" rel="noopener noreferrer"
+                            class="btn btn-primary goods-btn">サバトラ商店へ</a>
+                    </section>
+
+                    <!-- ギャラリー -->
+                    <section id="gallery" class="boukyaku-section">
+                        <h3 class="boukyaku-section-title">ギャラリー</h3>
+                        <!--
+                            【更新箇所：ギャラリー】
+                            新しい公演の写真を追加するときは、直下にある
+                            「ギャラリー1公演分 ここから」から「ギャラリー1公演分 ここまで」までを複製し、
+                            古い公演より上に置いてください。
+                            見出しの series名と、各imgのsrc・altを書き換えてください。
+                            写真を増減するときは、gallery-item の1行を必要な枚数だけ複製・削除します。
+                        -->
+                        <!-- ギャラリー1公演分 ここから -->
+                        <div class="gallery-series">
+                            <h4 class="gallery-series-title">series2-Sakutaro Hagiwara</h4>
+                            <div class="gallery-grid">
+                                <button class="gallery-item" type="button" aria-label="series2-Sakutaro Hagiwara ギャラリー画像1を拡大"><img src="assets/img/boukyaku/gallery-season02/gallery02_01.webp" alt="series2-Sakutaro Hagiwara ギャラリー画像1" loading="lazy"></button>
+                                <button class="gallery-item" type="button" aria-label="series2-Sakutaro Hagiwara ギャラリー画像2を拡大"><img src="assets/img/boukyaku/gallery-season02/gallery02_02.webp" alt="series2-Sakutaro Hagiwara ギャラリー画像2" loading="lazy"></button>
+                                <button class="gallery-item" type="button" aria-label="series2-Sakutaro Hagiwara ギャラリー画像3を拡大"><img src="assets/img/boukyaku/gallery-season02/gallery02_03.webp" alt="series2-Sakutaro Hagiwara ギャラリー画像3" loading="lazy"></button>
+                                <button class="gallery-item" type="button" aria-label="series2-Sakutaro Hagiwara ギャラリー画像4を拡大"><img src="assets/img/boukyaku/gallery-season02/gallery02_04.webp" alt="series2-Sakutaro Hagiwara ギャラリー画像4" loading="lazy"></button>
+                                <button class="gallery-item" type="button" aria-label="series2-Sakutaro Hagiwara ギャラリー画像5を拡大"><img src="assets/img/boukyaku/gallery-season02/gallery02_05.webp" alt="series2-Sakutaro Hagiwara ギャラリー画像5" loading="lazy"></button>
+                                <button class="gallery-item" type="button" aria-label="series2-Sakutaro Hagiwara ギャラリー画像6を拡大"><img src="assets/img/boukyaku/gallery-season02/gallery02_06.webp" alt="series2-Sakutaro Hagiwara ギャラリー画像6" loading="lazy"></button>
+                                <button class="gallery-item" type="button" aria-label="series2-Sakutaro Hagiwara ギャラリー画像7を拡大"><img src="assets/img/boukyaku/gallery-season02/gallery02_07.webp" alt="series2-Sakutaro Hagiwara ギャラリー画像7" loading="lazy"></button>
+                                <button class="gallery-item" type="button" aria-label="series2-Sakutaro Hagiwara ギャラリー画像8を拡大"><img src="assets/img/boukyaku/gallery-season02/gallery02_08.webp" alt="series2-Sakutaro Hagiwara ギャラリー画像8" loading="lazy"></button>
+                                <button class="gallery-item" type="button" aria-label="series2-Sakutaro Hagiwara ギャラリー画像9を拡大"><img src="assets/img/boukyaku/gallery-season02/gallery02_09.webp" alt="series2-Sakutaro Hagiwara ギャラリー画像9" loading="lazy"></button>
+                                <button class="gallery-item" type="button" aria-label="series2-Sakutaro Hagiwara ギャラリー画像10を拡大"><img src="assets/img/boukyaku/gallery-season02/gallery02_10.webp" alt="series2-Sakutaro Hagiwara ギャラリー画像10" loading="lazy"></button>
+                                <button class="gallery-item" type="button" aria-label="series2-Sakutaro Hagiwara ギャラリー画像11を拡大"><img src="assets/img/boukyaku/gallery-season02/gallery02_11.webp" alt="series2-Sakutaro Hagiwara ギャラリー画像11" loading="lazy"></button>
+                                <button class="gallery-item" type="button" aria-label="series2-Sakutaro Hagiwara ギャラリー画像12を拡大"><img src="assets/img/boukyaku/gallery-season02/gallery02_12.webp" alt="series2-Sakutaro Hagiwara ギャラリー画像12" loading="lazy"></button>
+                                <button class="gallery-item" type="button" aria-label="series2-Sakutaro Hagiwara ギャラリー画像13を拡大"><img src="assets/img/boukyaku/gallery-season02/gallery02_13.webp" alt="series2-Sakutaro Hagiwara ギャラリー画像13" loading="lazy"></button>
+                                <button class="gallery-item" type="button" aria-label="series2-Sakutaro Hagiwara ギャラリー画像14を拡大"><img src="assets/img/boukyaku/gallery-season02/gallery02_14.webp" alt="series2-Sakutaro Hagiwara ギャラリー画像14" loading="lazy"></button>
+                                <button class="gallery-item" type="button" aria-label="series2-Sakutaro Hagiwara ギャラリー画像15を拡大"><img src="assets/img/boukyaku/gallery-season02/gallery02_15.webp" alt="series2-Sakutaro Hagiwara ギャラリー画像15" loading="lazy"></button>
+                            </div>
+                        </div>
+                        <!-- ギャラリー1公演分 ここまで -->
+                        <div class="gallery-series">
+                            <h4 class="gallery-series-title">series1-Kenji Miyazawa</h4>
+                            <div class="gallery-grid">
+                                <button class="gallery-item" type="button" aria-label="series1-Kenji Miyazawa ギャラリー画像1を拡大"><img src="assets/img/boukyaku/gallery-season01/gallery01_01.webp" alt="series1-Kenji Miyazawa ギャラリー画像1" loading="lazy"></button>
+                                <button class="gallery-item" type="button" aria-label="series1-Kenji Miyazawa ギャラリー画像2を拡大"><img src="assets/img/boukyaku/gallery-season01/gallery01_02.webp" alt="series1-Kenji Miyazawa ギャラリー画像2" loading="lazy"></button>
+                                <button class="gallery-item" type="button" aria-label="series1-Kenji Miyazawa ギャラリー画像3を拡大"><img src="assets/img/boukyaku/gallery-season01/gallery01_03.webp" alt="series1-Kenji Miyazawa ギャラリー画像3" loading="lazy"></button>
+                                <button class="gallery-item" type="button" aria-label="series1-Kenji Miyazawa ギャラリー画像4を拡大"><img src="assets/img/boukyaku/gallery-season01/gallery01_04.webp" alt="series1-Kenji Miyazawa ギャラリー画像4" loading="lazy"></button>
+                                <button class="gallery-item" type="button" aria-label="series1-Kenji Miyazawa ギャラリー画像5を拡大"><img src="assets/img/boukyaku/gallery-season01/gallery01_05.webp" alt="series1-Kenji Miyazawa ギャラリー画像5" loading="lazy"></button>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+
+                <!-- ギャラリー拡大用モーダル -->
+                <dialog id="gallery-modal" class="gallery-modal" aria-label="公演写真の拡大表示">
+                    <button class="gallery-modal-close" type="button" aria-label="写真を閉じる" autofocus>×</button>
+                    <img id="gallery-modal-img" class="gallery-modal-content" alt="拡大画像">
+                </dialog>
+
+                <!-- ページ下部導線 -->
+                <div class="boukyaku-bottom-area">
+                    <div class="bottom-contact-box">
+                        <p>公演に関するお問い合わせは以下よりお願いいたします。</p>
+                        <a href="https://forms.gle/N3kHqeqKoKmUGtqM6" target="_blank" rel="noopener noreferrer" class="btn btn-primary">お問い合わせフォームへ</a>
+                    </div>
+                </div>
+            </div> <!-- /.boukyaku-main-container -->
+        </section>
+    </main>
+
+    <!-- 最小限のフッター -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-inner">
+                <!-- 左側：ポリシー等 -->
+                <div class="footer-left">
+                    <div class="footer-policy">
+                        <div class="policy-links">
+                            <a href="sitepolicy.html" class="privacy-link">Site Policy</a>
+                            <span class="policy-separator">/</span>
+                            <a href="privacy.html" class="privacy-link">Privacy Policy</a>
+                        </div>
+                        <p class="copyright">&copy; SABATORA SHOKAI All rights reserved.</p>
+                    </div>
+                </div>
+                <!-- 右側：ロゴ -->
+                <div class="footer-right">
+                    <img src="assets/img/common/logo_touka_02.png" alt="サバトラ商會 ロゴ" class="footer-logo">
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="assets/js/main.js"></script>
+</body>
+
+</html>

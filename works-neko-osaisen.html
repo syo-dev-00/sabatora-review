@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<!-- Review copy: production analytics omitted. -->
+    <meta charset="UTF-8">
+    <meta name="robots" content="noindex, nofollow, noarchive">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>猫代お賽銭友の会 - サバトラ商會 | SABATORA SHOKAI（確認用）</title>
+    <meta name="description" content="保護猫シェルター支援活動「猫代お賽銭友の会」の紹介ページです。">
+    <!-- OGP -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="猫代お賽銭友の会 - サバトラ商會 | SABATORA SHOKAI">
+    <meta property="og:description" content="保護猫シェルター支援活動「猫代お賽銭友の会」の紹介ページです。">
+    <meta property="og:url" content="https://syo-dev-00.github.io/sabatora-review/works-neko-osaisen.html">
+    <meta property="og:image" content="https://syo-dev-00.github.io/sabatora-review/assets/img/ogp.jpg">
+    <meta property="og:site_name" content="サバトラ商會">
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="猫代お賽銭友の会 - サバトラ商會 | SABATORA SHOKAI">
+    <meta name="twitter:description" content="保護猫シェルター支援活動「猫代お賽銭友の会」の紹介ページです。">
+    <meta name="twitter:image" content="https://syo-dev-00.github.io/sabatora-review/assets/img/ogp.jpg">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Noto+Sans+JP:wght@400;500;700;900&display=swap" rel="stylesheet">
+    <!-- CSS -->
+    <link rel="stylesheet" href="assets/css/style.css">
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="assets/icons/favicon-96x96.png" sizes="96x96">
+    <link rel="icon" type="image/svg+xml" href="assets/icons/favicon.svg">
+    <link rel="shortcut icon" href="assets/icons/favicon.ico">
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/icons/apple-touch-icon.png">
+    <link rel="manifest" href="assets/icons/site.webmanifest">
+    <style>
+        /* =========================================
+           neko-osaisen ページ固有スタイル
+           ※ boukyaku.html と同じ外枠・パンくず構造を踏襲
+        ========================================= */
+
+        /* ページ全体ラッパー（boukyaku-page-wrapper 相当） */
+        .neko-page-wrapper {
+            padding-top: 240px;
+            padding-bottom: 0;
+            background-color: var(--color-bg);
+        }
+        @media (max-width: 991px) {
+            .neko-page-wrapper {
+                padding-top: 85px;
+            }
+            .neko-page-wrapper .breadcrumb {
+                padding-top: 18px;
+                padding-bottom: 18px;
+            }
+        }
+
+        /* メインコンテナ（boukyaku-main-container 相当） */
+        .neko-main-container {
+            max-width: 1000px;
+            margin: 0 auto;
+            background-color: #fff;
+            border: 1px solid var(--color-border);
+            padding-bottom: 0;
+        }
+
+        /* =========================================
+           冒頭ヒーローブロック
+        ========================================= */
+        .neko-hero {
+            border-bottom: 1px solid rgba(18, 40, 76, 0.08);
+            padding: 28px 24px 22px;
+        }
+        .neko-hero-visual {
+            display: flex;
+            justify-content: center;
+        }
+        .neko-hero-image {
+            width: 100%;
+            max-width: 920px;
+            height: auto;
+            display: block;
+            margin: 0 auto;
+        }
+        @media (max-width: 768px) {
+            .neko-hero {
+                padding: 22px 10px 20px;
+            }
+        }
+
+        /* =========================================
+           セクション共通
+        ========================================= */
+        .neko-section {
+            padding: 64px 40px; /* 上下余白をすべて統一して等間隔に */
+            border-bottom: 1px solid rgba(18, 40, 76, 0.08);
+        }
+        .neko-section:last-child {
+            border-bottom: none;
+            padding-bottom: 44px;
+        }
+        @media (max-width: 768px) {
+            .neko-section {
+                padding: 48px 20px;
+            }
+            .neko-section:last-child {
+                padding-bottom: 36px;
+            }
+        }
+
+        /* セクション番号見出し */
+        .neko-section-heading {
+            display: flex;
+            align-items: baseline; /* ベースラインを統一 */
+            gap: 8px;
+            margin-bottom: 40px; /* 本文ブロックとの距離を統一 */
+        }
+        .neko-section-num {
+            font-family: var(--font-family-en);
+            font-size: 2.8rem;
+            font-weight: 700;
+            color: var(--color-primary);
+            line-height: 1;
+            opacity: 0.25;
+        }
+        .neko-section-label {
+            font-size: 1.2rem;
+            font-weight: 700;
+            color: var(--color-text);
+        }
+        @media (max-width: 768px) {
+            .neko-section-num { font-size: 2rem; }
+            .neko-section-label { font-size: 1.05rem; }
+            .neko-section-heading { margin-bottom: 24px; }
+        }
+
+        /* =========================================
+           2カラムレイアウト
+        ========================================= */
+        .neko-two-col {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 48px;
+            align-items: start;
+        }
+        @media (max-width: 768px) {
+            .neko-two-col {
+                grid-template-columns: 1fr;
+                gap: 28px;
+            }
+        }
+
+        .neko-col-img img {
+            width: 100%;
+            height: auto;
+            border-radius: 8px;
+            display: block;
+        }
+
+        .neko-osaisen-box-img {
+            object-fit: contain;
+        }
+
+        /* テキストカラム */
+        .neko-col-text-heading {
+            font-size: 1.1rem;
+            font-weight: 700;
+            color: var(--color-primary);
+            margin-bottom: 18px;
+            padding-bottom: 10px;
+            border-bottom: 1px solid var(--color-border);
+        }
+        .neko-col-text p {
+            font-size: 0.92rem;
+            line-height: 1.95;
+            color: var(--color-text);
+            margin-bottom: 14px;
+        }
+        .neko-col-text p:last-child { margin-bottom: 0; }
+
+        /* =========================================
+           ロゴリンク
+        ========================================= */
+        .neko-logo-link {
+            display: inline-block;
+            margin: 10px 0;
+            transition: opacity 0.2s;
+        }
+        .neko-logo-link:hover { opacity: 0.7; }
+        /* noteロゴ */
+        .neko-logo-link img {
+            height: 36px;
+            width: auto;
+            display: block;
+        }
+
+        /* QUEUEロゴ：白背景ボックスで表示（控えめサイズ） */
+        .neko-queue-logo-box {
+            display: inline-flex;
+            align-items: center;
+            background: #fff;
+            border: 1px solid rgba(18, 40, 76, 0.12);
+            border-radius: 4px;
+            padding: 6px 12px;
+        }
+        .neko-queue-logo-box img {
+            height: 40px;
+            width: auto;
+            display: block;
+        }
+        .neko-logo-link:hover .neko-queue-logo-box {
+            opacity: 0.75;
+        }
+    </style>
+</head>
+<body>
+    <!-- ヘッダー -->
+    <header class="header">
+        <div class="header-inner">
+            <div class="header-logo-container">
+                <a href="index.html">
+                    <img src="assets/img/common/logo_touka_01.png" alt="サバトラ商會 ロゴ" class="header-logo">
+                </a>
+            </div>
+            <div class="header-icons-container"></div>
+            <button class="hamburger" type="button" aria-label="メニューを開く" aria-expanded="false" aria-controls="global-nav">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <div class="header-center">
+                <div class="site-title">
+                    <span class="ja">サバトラ商會</span>
+                    <span class="en">SABATORA SHOKAI</span>
+                </div>
+            </div>
+            <nav class="header-nav" id="global-nav">
+                <ul class="nav-list">
+                    <li><a href="index.html#content" class="nav-link">CONTENT</a></li>
+                    <li><a href="index.html#works" class="nav-link">WORKS</a></li>
+                    <li><a href="index.html#social" class="nav-link">SOCIAL</a></li>
+                    <li><a href="index.html#contact" class="nav-link">CONTACT</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="neko-page-wrapper">
+
+            <!-- パンくず（boukyaku.html と同じ .breadcrumb クラスを使用） -->
+            <div class="breadcrumb">
+                <div class="container">
+                    <a href="index.html">サバトラ商會</a> &gt; <span>猫代お賽銭友の会</span>
+                </div>
+            </div>
+
+            <!-- メインコンテナ（白枠） -->
+            <div class="neko-main-container">
+
+                <!-- =========================================
+                     冒頭ブロック（PPT 2枚目相当）
+                ========================================= -->
+                <div class="neko-hero">
+                    <h1 class="visually-hidden">猫代お賽銭友の会</h1>
+                    <div class="neko-hero-visual">
+                        <img src="assets/img/works/neko-osaisen/works_neko_hero.webp" alt="猫代お賽銭友の会 メインビジュアル" class="neko-hero-image">
+                    </div>
+                </div>
+
+                <!-- =========================================
+                     セクション01：猫代お賽銭友の会とは
+                ========================================= -->
+                <div class="neko-section">
+                    <div class="neko-section-heading">
+                        <span class="neko-section-num">01</span>
+                        <span class="neko-section-label">猫代お賽銭友の会とは</span>
+                    </div>
+                    <div class="neko-two-col">
+                        <div class="neko-col-img">
+                            <img src="assets/img/works/neko-osaisen/works_03.webp" alt="保護猫の様子">
+                        </div>
+                        <div class="neko-col-text">
+                            <h2 class="neko-col-text-heading">猫代お賽銭友の会は</h2>
+                            <p>信頼できる家族と巡り合い、愛してもらえる幸福な猫生を送りたいと願う友たちに、ほんの少しでも手を差し伸べたいという気持ちから始まった会です。</p>
+                            <p>近年、多頭飼育崩壊、飼い主の高齢化や病気・引っ越しによる飼育放棄、ブリーダーの引退猫といった人間の様々な事情により行き場を失った猫たちが残念なことに増え続けています。</p>
+                            <p>そんな猫たちが集う「保護猫シェルター」は、素敵な飼い主さんを心待ちにしている子たちが少しでも快適な生活ができるよう、日々、様々尽力してくれております。</p>
+                            <p>私たちは私たちにできること、小さなお賽銭活動からではありますが、支援の輪をこの友の会で広げ、やがて友の幸せに繋がる懸け橋になれるよう祈りながら活動しております。</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- =========================================
+                     セクション02：猫代お賽銭箱
+                ========================================= -->
+                <div class="neko-section">
+                    <div class="neko-section-heading">
+                        <span class="neko-section-num">02</span>
+                        <span class="neko-section-label">猫代お賽銭箱</span>
+                    </div>
+                    <div class="neko-two-col">
+                        <div class="neko-col-text">
+                            <h2 class="neko-col-text-heading">猫代のお賽銭箱は</h2>
+                            <p>現在、主にコンテンツイベント等に出張で特設しております。</p>
+                            <p>木製の貫禄あるこちらのお賽銭箱を見かけたら是非お賽銭を投げてみてください。</p>
+                            <p>そうすればほら、もうあなたも友の会</p>
+                        </div>
+                        <div class="neko-col-img">
+                            <img src="assets/img/works/neko-osaisen/works_04.webp" alt="猫代お賽銭箱" class="neko-osaisen-box-img">
+                        </div>
+                    </div>
+                </div>
+
+                <!-- =========================================
+                     セクション03：猫代お賽銭の行き先
+                ========================================= -->
+                <div class="neko-section">
+                    <div class="neko-section-heading">
+                        <span class="neko-section-num">03</span>
+                        <span class="neko-section-label">猫代お賽銭の行き先</span>
+                    </div>
+                    <div class="neko-two-col">
+                        <div class="neko-col-img">
+                            <img src="assets/img/works/neko-osaisen/works_05.webp" alt="保護猫シェルター QUEUE の様子">
+                        </div>
+                        <div class="neko-col-text">
+                            <h2 class="neko-col-text-heading">猫代お賽銭の行き先は</h2>
+                            <p>現在、東京都世田谷区経堂（小田急線経堂駅より徒歩3分）にある保護猫シェルターQUEUE（クー）さんへ集まったお賽銭を支援としてお渡ししております。</p>
+                            <p>お渡し毎の金額やお渡し風景等は現状、作者のnote内に記載しておりますので、下記のリンクよりご覧ください。</p>
+                            <!-- noteロゴリンク -->
+                            <a href="https://note.com/mao_takeuchi" class="neko-logo-link" target="_blank" rel="noopener noreferrer" aria-label="noteへのリンク">
+                                <img src="assets/img/works/neko-osaisen/note_logo.png" alt="note">
+                            </a>
+                            <p>保護猫シェルターQUEUE（クー）さんに直接行って実際に友たちに会うこともできます。<br>（入場時に寄付金600/30分）<br>触れ合う時間がそのまま保護活動への支援に繋がります。</p>
+                            <p>HPからも、投げ銭や寄付、欲しいものリストからの支援物資提供、ボランティアの応募等が可能となっておりますので、詳細は下記のリンク先よりご覧ください。</p>
+                            <!-- QUEUEロゴリンク（白背景ボックス内） -->
+                            <a href="https://lit.link/queuecats" class="neko-logo-link" target="_blank" rel="noopener noreferrer" aria-label="保護猫シェルター QUEUEへのリンク">
+                                <span class="neko-queue-logo-box">
+                                    <img src="assets/img/works/neko-osaisen/queue.png" alt="保護猫シェルター QUEUE（クー）">
+                                </span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+            </div><!-- /.neko-main-container -->
+        </section>
+    </main>
+
+    <!-- フッター -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-inner">
+                <div class="footer-left">
+                    <div class="footer-policy">
+                        <div class="policy-links">
+                            <a href="sitepolicy.html" class="privacy-link">Site Policy</a>
+                            <span class="policy-separator">/</span>
+                            <a href="privacy.html" class="privacy-link">Privacy Policy</a>
+                        </div>
+                        <p class="copyright">&copy; SABATORA SHOKAI All rights reserved.</p>
+                    </div>
+                </div>
+                <div class="footer-right">
+                    <img src="assets/img/common/logo_touka_02.png" alt="サバトラ商會 ロゴ" class="footer-logo">
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="assets/js/main.js"></script>
+</body>
+</html>
